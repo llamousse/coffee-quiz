@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: url('https://image.freepik.com/free-photo/empty-dark-wooden-table-in-front-of-abstract-blurred-background-of-cafe-and-coffee-shop-interior-can-be-used-for-display-or-montage-your-products_1715-1350.jpg') no-repeat fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  color: white;
+}
+
+.logo {
+  /*position: fixed;*/
+  height: 90px;
+  border-radius: 50%;
+  /*border: 1px solid black;*/
+  /*margin-top: 10px;*/
+  margin-top: auto;
+  margin-left: 30px;
+}
+
+p {
+  text-align: right;
+  margin-top: 20px;
+  margin-right: 25px;
+  padding-right: 30px;
+  
+}
+
+header {
+    width: 100%;
+    padding: 30px 0;
+    font-size: 20px;
+    color: white;
+    display: flex;
+}
+
+/* Clearfix */
+
+header::before,
+header::after {
+    display: table;
+    content: '';
+}
+header::after {
+    clear: both;
+}
+
+ /*Non-mobile, grid */
+@media only screen and (min-width: 640px) {
+  .col-4 {
+    width: 33.33%;
+    display: inline-block;
+  }
+
+  .col-8 {
+    width: 100%;
+    width: 66.67%;
+    display: inline-block;
+  }
+  
+  .formQA {
+    width: 40%;
+    margin: 0 auto;
+  }
+}
+
+.col-4,
+.col-8 {
+    /*float: left;*/
+    padding-left: 1.04166666%;
+    padding-right: 1.04166666%;
+}
+.col-4 {
+    width: 33.33%
+}
+.col-8 {
+    width: 66.67%;
+}
+
+.introStart {
+  text-align: center;
+  margin-top: 150px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+button {
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 5%;
+  border: none;
+  outline: none;
+  margin-top: 18px;
+  cursor: pointer;
+}
+
+/* burgundy button when hover on start */
+button:hover {
+  background-color: #800020; 
+  color: white;
+}
+
+.formQA {
+  width: 80%;
+  margin: 0 auto;
+  display: none;
+}
+
+.formQA img {
+  width: 80%;
+}
+
+.formQA > div {
+  margin-top: 30px;
+}
+
+.formQA > h1 {
+  /*width: 100%;*/
+  font-size: 24px;
+}
+
+.formQA > h2 {
+  font-size: 15px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+fieldset {
+  text-align: center;
+  border: none;
+}
+
+label {
+  padding: 25px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  display: flex;
+  border: none;
+  cursor: pointer;
+  background-color: #800020;
+}
+
+label:hover {
+  background-color: #9a0026;
+}
+
+input {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    transition: 0.2s;
+    margin-right: 5px;
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+}
+
+input:checked {
+  border: 8px solid white;
+}
+
+input[type=radio] {
+  margin-right: 20px;
+  flex: 0 0 auto;
+}
+
+form button {
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+/*feedback-img {*/
+/*  width: 100%;*/
+/*}*/

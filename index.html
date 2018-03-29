@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Coffee Quiz App</title>
+    <meta name="description" content="Test your coffee knowledge">
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  </head>
+  <body>
+    <header role="banner">
+      <div class="col-4">
+        <a href="index.html">
+          <img class="logo" src="https://99designs-blog.imgix.net/wp-content/uploads/2017/05/attachment_78456430.jpg?auto=format&q=60&fit=max&w=930" alt="coffee cup icon"/>
+        </a>
+      </div>
+      <div class="col-8">
+        <p>QUESTION: <span class="numQuestion">0</span>/10</p>
+        <p>SCORE: <span class="score">0</span></p>
+      </div>
+    </header>
+    
+    <main role="main">
+      <div class="introStart">
+        <h1>COFFEE QUIZ. READY?</h1>
+        <button type="button" class="buttonStart">LET'S BEGIN</button>
+      </div>
+      <div class="formQA"></div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="store.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
